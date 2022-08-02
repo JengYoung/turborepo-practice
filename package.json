@@ -1,10 +1,18 @@
 {
+  "private": true,
   "packageManager": "yarn@3.2.2",
   "workspaces": [
-    "packages/*",
-    "client/*"
+    "docs",
+    "apps/*",
+    "packages/*"
   ],
   "devDependencies": {
     "turbo": "^1.4.2"
+  },
+  "scripts": {
+    "build": "turbo run build",
+    "test": "turbo run test",
+    "lint": "turbo run lint",
+    "dev": "turbo run dev"
   }
 }
