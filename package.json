@@ -1,0 +1,10 @@
+{
+  "packageManager": "yarn@3.2.2",
+  "workspaces": [
+    "packages/*",
+    "client/*"
+  ],
+  "devDependencies": {
+    "turbo": "^1.4.2"
+  }
+}
