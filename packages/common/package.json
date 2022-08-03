@@ -1,0 +1,16 @@
+{
+  "name": "@packages/common",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "files": [
+    "dist"
+  ],
+  "packageManager": "yarn@3.2.2",
+  "devDependencies": {
+    "typescript": "^4.7.4"
+  },
+  "scripts": {
+    "dev": "tsc -W",
+    "build": "tsc --build"
+  }
+}

@@ -2,7 +2,6 @@
   "private": true,
   "packageManager": "yarn@3.2.2",
   "workspaces": [
-    "docs",
     "packages/*"
   ],
   "devDependencies": {
@@ -12,6 +11,6 @@
     "build": "turbo run build",
     "test": "turbo run test",
     "lint": "turbo run lint",
-    "dev": "turbo run dev"
+    "dev": "turbo run dev --parallel"
   }
 }

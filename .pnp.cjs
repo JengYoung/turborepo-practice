@@ -23,12 +23,17 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
       {\
         "name": "@packages/app",\
         "reference": "workspace:packages/app"\
+      },\
+      {\
+        "name": "@packages/common",\
+        "reference": "workspace:packages/common"\
       }\
     ],\
     "enableTopLevelFallback": true,\
     "ignorePatternData": "(^(?:\\\\.yarn\\\\/sdks(?:\\\\/(?!\\\\.{1,2}(?:\\\\/|$))(?:(?:(?!(?:^|\\\\/)\\\\.{1,2}(?:\\\\/|$)).)*?)|$))$)",\
     "fallbackExclusionList": [\
       ["@packages/app", ["workspace:packages/app"]],\
+      ["@packages/common", ["workspace:packages/common"]],\
       ["root-workspace-0b6124", ["workspace:."]]\
     ],\
     "fallbackPool": [\
@@ -174,11 +179,22 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./packages/app/",\
           "packageDependencies": [\
             ["@packages/app", "workspace:packages/app"],\
+            ["@packages/common", "workspace:packages/common"],\
             ["@types/node", "npm:18.6.3"],\
             ["@types/react", "npm:18.0.15"],\
             ["next", "virtual:3575eb51d5a32ca5e805e132fe45093291fc9a5d911d4482edb9584841d6bd112362897ba9aa42bc3b9867fe423ce1f42bb3bcf9879c6d01df463c99dcb6fca4#npm:12.2.3"],\
             ["react", "npm:18.2.0"],\
             ["react-dom", "virtual:3575eb51d5a32ca5e805e132fe45093291fc9a5d911d4482edb9584841d6bd112362897ba9aa42bc3b9867fe423ce1f42bb3bcf9879c6d01df463c99dcb6fca4#npm:18.2.0"],\
+            ["typescript", "patch:typescript@npm%3A4.7.4#~builtin<compat/typescript>::version=4.7.4&hash=f456af"]\
+          ],\
+          "linkType": "SOFT"\
+        }]\
+      ]],\
+      ["@packages/common", [\
+        ["workspace:packages/common", {\
+          "packageLocation": "./packages/common/",\
+          "packageDependencies": [\
+            ["@packages/common", "workspace:packages/common"],\
             ["typescript", "patch:typescript@npm%3A4.7.4#~builtin<compat/typescript>::version=4.7.4&hash=f456af"]\
           ],\
           "linkType": "SOFT"\
